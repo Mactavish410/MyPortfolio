@@ -1,10 +1,10 @@
 $(function () {
   $(".my-skills__icon").mouseover(function(){
-     this.children[0].src = `/img/icon;hover/icon ${this.children[0].alt} -- hover.svg`  
+     this.children[0].src = `img/icon;hover/icon ${this.children[0].alt} -- hover.svg`  
    });
    
     $(".my-skills__icon").mouseout(function(){
-        this.children[0].src = `/img/icon/icon ${this.children[0].alt}.svg`
+        this.children[0].src = `img/icon/icon ${this.children[0].alt}.svg`
    });
 });
 
