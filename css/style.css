@@ -1,4 +1,17 @@
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inconsolata", monospace;
+  color: #FF8303;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 20px;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: #1F1E1B;
@@ -7,9 +20,11 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .header__nav {
+  background-color: #1F1E1B;
   height: 80px;
   align-items: center;
   text-align: center;
@@ -88,4 +103,123 @@ body {
 .header__main-right {
   width: 50%;
   background: url(../img/Bg-code.png);
+}
+
+.info__content {
+  align-items: center;
+  font-family: "Inconsolata", monospace;
+  color: #F0E3CA;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  width: 900px;
+  padding: 80px;
+  display: flex;
+}
+.info__content::before {
+  content: url(../img/Logo.svg);
+  padding: 0px 40px;
+}
+
+.my-skills {
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.my-skills__blocks {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+.my-skills__blocks div {
+  background: #1B1A17;
+  border-radius: 10px;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.my-skills__blocks div p {
+  font-family: "Inconsolata", monospace;
+  color: #F0E3CA;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.my-work {
+  margin-bottom: 10px;
+  color: #F0E3CA;
+}
+
+.my-work__blocks {
+  display: flex;
+  justify-content: center;
+}
+
+.my-work__block {
+  margin-top: 30px;
+  width: 320px;
+  height: 320px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.my-work__block h3 {
+  margin: 60px 0 10px 0;
+}
+.my-work__block h4 {
+  font-family: "Inconsolata", monospace;
+  color: #F0E3CA;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+.my-work__block p {
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  margin-left: 10px;
+}
+.my-work__block button {
+  background: #1F1E1B;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.my-work__img {
+  width: 320px;
+  position: absolute;
+  height: 320px;
+  z-index: 1;
+}
+
+.my-work__img-active {
+  z-index: -5;
+  opacity: 10%;
+}
+
+.my-work__text {
+  margin-right: 35px;
+  z-index: 0;
+}
+
+.line {
+  width: 200px;
+  margin: 20px auto;
+  border: #32312E 1px solid;
 }/*# sourceMappingURL=style.css.map */

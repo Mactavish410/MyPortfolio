@@ -3,7 +3,20 @@ $dark-bg: #1B1A17;
 $text-orange: #FF8303;
 $text: #F0E3CA;
 
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inconsolata', monospace;
+    color: $text-orange;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px;
+}
+
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     background: $light-bg;
@@ -14,8 +27,10 @@ header{
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .header__nav {
+    background-color: $light-bg;
     height: 80px;
     align-items: center;
     text-align: center;
@@ -81,7 +96,7 @@ header{
     }
     p {
         font-family: 'Inconsolata', monospace;
-        color: #F0E3CA;
+        color: $text;
         font-style: normal;
         font-size: 20px;
         font-weight: 400;
@@ -91,4 +106,125 @@ header{
 .header__main-right {
     width: 50%;
     background: url(../img/Bg-code.png);
+}
+.info {
+}
+.info__content {
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    color: $text;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    width: 900px;
+    padding: 80px;
+    display: flex;
+    &::before {
+        content: url(../img/Logo.svg);
+        padding: 0px 40px;
+    }
+}
+.my-skills {
+    color: #000;
+    margin-bottom: 100px;
+}
+.my-skills__content {
+}
+.my-skills__blocks {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    div {
+        background: $dark-bg;
+        border-radius: 10px;
+        height: 300px;
+        width: 200px;
+        // padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        p {
+            font-family: 'Inconsolata', monospace;
+            color: $text;
+            font-style: normal;
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+}
+.my-work {
+    margin-bottom: 10px;
+    color: $text;
+}
+.my-work__content {
+}
+.my-work__blocks {
+    display: flex;
+    justify-content: center;
+}
+.my-work__block {
+    margin-top: 30px;
+    width: 320px;
+    height: 320px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    h3{
+        margin: 60px 0 10px 0 ;
+    }
+    h4 {
+        font-family: 'Inconsolata', monospace;
+        color: $text;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    p {
+        font-family: 'Inconsolata', monospace;
+        
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        margin-left: 10px;
+    }
+    button {
+        background: $light-bg;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 20px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+
+}
+.my-work__img {
+    width: 320px;
+    position: absolute;
+    height: 320px;
+    z-index: 1;
+}
+.my-work__img-active {
+    z-index:-5;
+    opacity: 10%;
+}
+.my-work__text {
+    margin-right: 35px;
+    z-index: 0;
+}
+
+.my-work__line {
+}
+.line {
+    width: 200px;
+    margin: 20px auto;
+    border: #32312E 1px solid;
 }
