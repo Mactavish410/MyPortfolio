@@ -161,7 +161,7 @@ header{
 .my-work__content {
 }
 .my-work__blocks {
-    margin-top: 30px;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
 }
@@ -245,7 +245,7 @@ header{
     }
 }
 footer {
-    margin: 150px 0 100px 0;
+    margin: 150px 0 50px 0;
 }
 .header__logo {
 }
@@ -265,6 +265,8 @@ footer {
     
 }
 .social {
+    display: flex;
+    align-items: center;
     width: 50%;
     margin-bottom: 20px;
     a {
